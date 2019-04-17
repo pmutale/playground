@@ -1,0 +1,2 @@
+---
+project_working_folder: "home/{{ user }}/app"

@@ -1,0 +1,6 @@
+---
+
+- name: Create Gunicorn SystemD file
+  template:
+    src: "gunicorn.service.html.j2"
+    dest: "{{ gunicorn_systemd_file }}"

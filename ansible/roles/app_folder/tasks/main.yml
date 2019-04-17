@@ -1,0 +1,26 @@
+---
+- name: Create App Directory
+  file:
+    path: "{{ project_working_folder }}"
+    state: "directory"
+    mode: 0755
+  register: result
+
+- debug:
+    var: result
+
+- name: Copy App files
+  git:
+    repo: "~/PycharmProjects/play-with-ansible/"
+    dest: "{{ project_working_folder }}"
+    owner: "{{ user }}"
+    remote_src: yes
+    mode: 0644
+
+- name: Get files to copy
+  command: "{{ get_app_files }}"
+  register: "app_files"
+
+- name: Delete PYC files
+  command: "{{ delet_pyc_files}}"
+

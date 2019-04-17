@@ -1,0 +1,10 @@
+---
+apache_config: "/etc/apache2/apache2.conf"
+apache_test_message: "Welcome - This is a test message"
+apache_docroot: "/var/www/html"
+sites_available: "/etc/apache2/sites_available/"
+sites_enabled: "/etc/apache2/sites_enabled/"
+
+apache_dirs:
+  - "/var/www/icons"
+  - "/var/www/others"

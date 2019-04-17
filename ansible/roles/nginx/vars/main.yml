@@ -1,0 +1,2 @@
+---
+gunicorn_systemd_file: "/etc/systemd/system/gunicorn.service"

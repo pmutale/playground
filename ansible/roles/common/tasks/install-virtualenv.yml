@@ -1,0 +1,7 @@
+---
+
+#- name: Install venv
+#  command: "virtualenv venv"
+#  args:
+#    chdir: {{ project_working_folder }}
+#    creates: /path/to/database

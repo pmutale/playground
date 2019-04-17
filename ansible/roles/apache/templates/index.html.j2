@@ -1,0 +1,11 @@
+<blockquote> {{ apache_test_message }} | {{  ansible_distribution }} | {{ ansible_distribution_version }} </blockquote>
+
+<div> Current Host: {{ ansible_hostname }} </div>
+<div>
+    <h1> Server List: </h1>
+    <ul>
+        {% for host in groups.webservers %}
+            <li> {{  host }}</li>
+        {% endfor %}
+    </ul>
+</div>

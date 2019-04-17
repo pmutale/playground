@@ -1,0 +1,4 @@
+---
+#get_app_files_test: find . -type f ! -path "./venv/*" ! -path "./.vagrant/*" ! -path "./ansible/*" ! -path "./.idea/*"
+get_app_files: "find . -type f | egrep -v '^(./venv/|./.vagrant/|./.idea|./ansible)'"
+delet_pyc_files: "find . -name '*.pyc' -delete"

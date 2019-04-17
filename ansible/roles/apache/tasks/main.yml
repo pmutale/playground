@@ -1,0 +1,28 @@
+---
+- name: Install Apache
+  apt:
+    name: "apache2"
+    state: "present"
+
+- name: Create sites directory
+  file:
+    path: "{{ item }}"
+    state: "directory"
+  with_items:
+    - "{{ apache_dirs }}"
+
+- name: Copy default index.html
+  template:
+    src: "index.html.j2"
+    dest: "{{ apache_docroot }}/index.html"
+
+- name: Copy Apache config
+  template:
+    src: "httpd-conf.j2"
+    dest: "{{ apache_config }}"
+  notify: Restart Apache
+
+- name: Start Apache
+  service:
+    name: "apache2"
+    state: "started"
