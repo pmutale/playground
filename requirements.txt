@@ -8,7 +8,7 @@ dj-database-url==0.5.0
 Django==3.2.20
 django-classy-tags==0.8.0
 django-cms==3.6.0
-django-filer==1.4.4
+django-filer==3.3.0
 django-formtools==2.1
 django-js-asset==1.2.2
 django-mptt==0.10.0
@@ -16,7 +16,7 @@ django-polymorphic==2.0.3
 django-sekizai==1.0.0
 django-treebeard==4.3
 djangocms-admin-style==1.2.9
-djangocms-attributes-field==1.1.0
+djangocms-attributes-field==4.0.0
 djangocms-column==1.9.0
 djangocms-file==2.2.0
 djangocms-googlemap==1.2.0
