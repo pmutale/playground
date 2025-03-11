@@ -5,7 +5,7 @@ bcrypt==3.1.6
 cffi==1.12.2
 cryptography==2.6.1
 dj-database-url==0.5.0
-Django==3.2.20
+Django==4.2.20
 django-classy-tags==0.8.0
 django-cms==3.6.0
 django-filer==1.4.4
@@ -30,7 +30,7 @@ djangocms-video==2.0.5
 easy-thumbnails==2.6
 gunicorn==19.9.0
 html5lib==1.0.1
-Jinja2==2.10.1
+Jinja2==3.1.6
 MarkupSafe==1.1.1
 paramiko==2.4.2
 Pillow==9.0.1
